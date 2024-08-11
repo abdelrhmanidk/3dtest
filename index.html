@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="spline">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>spline</title>
+  <link rel="manifest" href="manifest.json">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="container">
+      <div id="container3D">
+        <model-viewer 
+          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
+          src="images/robot.gltf" 
+          ar 
+          environment-image="shared-assets/environments/moon_1k.hdr" 
+          poster="shared-assets/models/NeilArmstrong.webp" 
+          shadow-intensity="1" 
+          camera-controls 
+          touch-action="pan-y">
+        </model-viewer>
+
+        <!-- <spline-viewer 
+          url="https://prod.spline.design/abhup52v-idtwYOV/scene.splinecode">
+        </spline-viewer> -->
+      </div>
+
+      <!-- <div id="controls">
+        <h2>Controls</h2>
+        <button id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <p>Some additional text can go here.</p>
+      </div> -->
+    </div>
+  </main>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
